@@ -4,7 +4,7 @@ import { Input } from "./ui/input";
 
 const Search = () => {
   return (
-    <div className="felx gap-2">
+    <div className="flex gap-2">
       <Input placeholder="Buscar restaurantes" className="border-none" />
       <Button size="icon">
         <SearchIcon size={20} />
