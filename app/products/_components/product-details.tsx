@@ -140,6 +140,8 @@ const ProdcutDetails = ({
         <h3 className="font-semibold">Sucos</h3>
         <ProductLits products={complementaryProducts} />
       </div>
+
+      <div></div>
     </div>
   );
 };
