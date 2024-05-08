@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import ProductImage from "./product-image";
 import DiscountBadge from "@/app/_components/discount-badge";
 import {
   calculateProductTotalPrice,
@@ -47,11 +46,8 @@ const ProdcutDetails = ({
     });
 
   return (
-    <div className="py-5">
-      <div className="relative h-[360px] w-full">
-        <ProductImage product={product} />
-      </div>
-      <div className="p-5">
+    <>
+      <div className=" relative z-50 mt-[-1.5rem] rounded-tl-3xl rounded-tr-3xl bg-white py-5">
         <div className="flex items-center gap-[0.375rem] px-5">
           <div className="relative h-6 w-6">
             <Image
@@ -142,7 +138,7 @@ const ProdcutDetails = ({
       </div>
 
       <div></div>
-    </div>
+    </>
   );
 };
 
