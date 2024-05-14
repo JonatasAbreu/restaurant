@@ -1,10 +1,11 @@
 import { db } from "@/app/_lib/prisma";
 import { notFound } from "next/navigation";
-import RestaurantImage from "../_components/restaurant-image";
+import RestaurantImage from "./_components/restaurant-image";
 import Image from "next/image";
 import { StarIcon } from "lucide-react";
 import DeliveryInfo from "@/app/_components/delivery-info";
 import ProductLits from "@/app/_components/product-list";
+import CartBanner from "./_components/cart-banner";
 
 interface RestaurantPageProps {
   params: {
@@ -103,6 +104,7 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
           <ProductLits products={category.Products} />
         </div>
       ))}
+      <CartBanner restaurant={restaurant} />
     </div>
   );
 };
