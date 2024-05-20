@@ -45,6 +45,15 @@ const Cart = () => {
         user: {
           connect: { id: data?.user?.id },
         },
+
+        products: {
+          createMany: {
+            data: products.map((product) => ({
+              productId: product.id,
+              quantity: product.quantity,
+            })),
+          },
+        },
       });
       clearCart();
     } catch (error) {
@@ -121,13 +130,14 @@ const Cart = () => {
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel disabled={isConfirmDialogOpen}>
+            <AlertDialogCancel>Cancelar</AlertDialogCancel>
+            <AlertDialogAction
+              disabled={isSubmitLoading}
+              onClick={handlerFinishOrderClick}
+            >
               {isSubmitLoading && (
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               )}
-              Cancelar
-            </AlertDialogCancel>
-            <AlertDialogAction onClick={handlerFinishOrderClick}>
               finalizar
             </AlertDialogAction>
           </AlertDialogFooter>
