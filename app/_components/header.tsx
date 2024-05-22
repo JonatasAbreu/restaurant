@@ -113,13 +113,17 @@ const Header = () => {
                   <span className="bloock">Meus pedidos</span>
                 </Link>
               </Button>
+
               <Button
                 variant="ghost"
                 className="w-full justify-start  space-x-3 rounded-full text-sm font-normal"
               >
-                <HeartIcon size={16} />
-                <span className="bloock">Restaurantes</span>
+                <Link href="/my-favorite-restaurants">
+                  <HeartIcon size={16} />
+                  <span className="bloock">Restaurantes favoritos</span>
+                </Link>
               </Button>
+
               <div className="py-6">
                 <Separator />
               </div>
