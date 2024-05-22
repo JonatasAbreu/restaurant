@@ -96,9 +96,12 @@ const Header = () => {
           <Button
             variant="ghost"
             className="w-full justify-start  space-x-3  rounded-full text-sm font-normal"
+            asChild
           >
-            <HomeIcon size={16} />
-            <span className="bloock">Início</span>
+            <Link href="/">
+              <HomeIcon size={16} />
+              <span className="bloock">Início</span>
+            </Link>
           </Button>
 
           {status == "authenticated" && (
@@ -117,6 +120,7 @@ const Header = () => {
               <Button
                 variant="ghost"
                 className="w-full justify-start  space-x-3 rounded-full text-sm font-normal"
+                asChild
               >
                 <Link href="/my-favorite-restaurants">
                   <HeartIcon size={16} />
