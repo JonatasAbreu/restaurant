@@ -9,7 +9,7 @@ import { cn } from "../_lib/utils";
 import { toggleFavoriteRestaurant } from "../_actions/restaurant";
 import { toast } from "sonner";
 
-interface RestaurantItemPros {
+interface RestaurantItemProps {
   userId?: string;
   restaurant: Restaurant;
   className?: string;
@@ -21,7 +21,7 @@ const RestaurantItem = ({
   className,
   userId,
   userFavoriteRestaurants,
-}: RestaurantItemPros) => {
+}: RestaurantItemProps) => {
   const isFavorite = userFavoriteRestaurants.some(
     (fav) => fav.restaurantId === restaurant.id,
   );

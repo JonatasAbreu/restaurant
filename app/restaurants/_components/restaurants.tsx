@@ -1,12 +1,16 @@
 "use client";
-import { Restaurant } from "@prisma/client";
+import { Restaurant, UserFavoriteRestaurant } from "@prisma/client";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { searchRestaurants } from "../_actions/search";
 import RestaurantItem from "@/app/_components/restaurant-Item";
 import Header from "@/app/_components/header";
 
-const Restaurants = () => {
+interface RestaurantProps {
+  userFavoriteRestaurants: UserFavoriteRestaurant[];
+}
+
+const Restaurants = ({ userFavoriteRestaurants }: RestaurantProps) => {
   const searchParams = useSearchParams();
   // const searchFor = searchParams.get("searchFor")
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
@@ -34,6 +38,7 @@ const Restaurants = () => {
               key={restaurant.id}
               restaurant={restaurant}
               className="min-w-full max-w-full"
+              userFavoriteRestaurants={userFavoriteRestaurants}
             />
           ))}
         </div>
