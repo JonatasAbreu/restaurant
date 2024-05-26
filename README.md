@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Delivery Food</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/JonatasAbreu/movies?color=56BEB8">
 
-First, run the development server:
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/JonatasAbreu/movies?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/JonatasAbreu/movies?color=56BEB8">
+
+
+  <img alt="License" src="https://img.shields.io/github/license/JonatasAbreu/movies?color=56BEB8">
+
+   <img alt="Github issues" src="https://img.shields.io/github/issues/JonatasAbreu/movies?color=56BEB8" /> 
+
+   <img alt="Github forks" src="https://img.shields.io/github/forks/JonatasAbreu/movies?color=56BEB8" /> 
+
+   <img alt="Github stars" src="https://img.shields.io/github/stars/JonatasAbreu/movies?color=56BEB8" /> 
+</p>
+
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/JonatasAbreu" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About ##
+
+ Movies and their trailers
+
+ <img  src="https://github.com/JonatasAbreu/restaurant/blob/master/public/food.gif">
+
+## :sparkles: Features ##
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [React](https://pt-br.reactjs.org/)
+- [Next](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/) 
+- [Prisma](https://www.prisma.io/docs)  
+
+  
+
+
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting ##
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone this project
+$ git clone https://github.com/JonatasAbreu/movies.git
+# Access
+$ cd movies
+# Install dependencies
+$ yarn or npm 
+# Run the project
+$ yarn run dev or npm run dev 
+# The server will initialize in the <http://localhost:3000>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## :memo: License ##
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+This project is under the [MIT license](./LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+Made with love by [Jônatas Abreu](https://github.com/JonatasAbreu) 🚀.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+&#xa0;
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="#top">Back to top</a>
